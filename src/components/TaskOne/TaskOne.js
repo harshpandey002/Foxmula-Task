@@ -2,7 +2,8 @@ import React, { useState, useRef, useEffect } from "react";
 import landscape from "../img/landscape.png";
 import sky from "../img/sky.png";
 import "./TaskOne.css";
-function TaskOne() {
+
+function TaskOne({ setTask }) {
   const text = useRef(null);
   const [scroll, setScroll] = useState(0);
 
@@ -11,11 +12,14 @@ function TaskOne() {
   });
 
   useEffect(() => {
-    console.log(text);
     text.current.style.top = scroll * 0.3 + "px";
   }, [scroll]);
+
   return (
     <div className="wrapper">
+      <button onClick={() => setTask(false)} id="one">
+        Task 2
+      </button>
       <div className="section--one">
         <img src={sky} alt="sky" />
         <img src={landscape} alt="landscape" />

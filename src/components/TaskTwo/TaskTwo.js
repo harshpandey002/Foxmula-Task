@@ -4,9 +4,12 @@ import "./TaskTwo.css";
 import Accordion from "react-bootstrap/Accordion";
 import { Card } from "react-bootstrap";
 
-function TaskTwo() {
+function TaskTwo({ setTask }) {
   return (
     <div>
+      <button onClick={() => setTask(true)} id="two">
+        Task 1
+      </button>
       <Accordion defaultActiveKey="6">
         <Card>
           <Accordion.Toggle as={Card.Header} eventKey="1" className="week">
