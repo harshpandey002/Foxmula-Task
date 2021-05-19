@@ -5,7 +5,7 @@ import TaskTwo from "./components/TaskTwo/TaskTwo";
 function App() {
   return (
     <div>
-      <TaskTwo />
+      <TaskOne />
     </div>
   );
 }
