@@ -1,0 +1,48 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(189, 189, 189);
+}
+
+.accordion {
+  position: absolute;
+  width: 320px;
+  height: 450px;
+  background-color: rgb(231, 231, 231);
+  overflow-y: scroll;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.accordion::-webkit-scrollbar {
+  width: 5px;
+}
+.accordion::-webkit-scrollbar-track {
+  background-color: rgb(231, 231, 231);
+}
+.accordion::-webkit-scrollbar-thumb {
+  background-color: rgba(148, 148, 148, 0.432);
+}
+
+.accordion > .card > .card-header {
+  cursor: pointer;
+  border: none;
+}
+
+.card {
+  border: none;
+}
+
+.list-items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.week {
+  font-weight: 500;
+}
